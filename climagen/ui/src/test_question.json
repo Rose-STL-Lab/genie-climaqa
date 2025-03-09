@@ -1,0 +1,10 @@
+{
+    "question": "What is the purpose of the aerosol passing through an inlet in on-line single-particle analyzers?",
+    "options": {
+        "a": "To analyze ion masses",
+        "b": "To form ions by ablating/ionizing particles",
+        "c": "To remove gas and form a particle beam",
+        "d": "To digitize and store spectra"
+    },
+    "correct_option": "c"
+}

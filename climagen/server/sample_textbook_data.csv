@@ -1,0 +1,1061 @@
+Textbook,Page No.,text,link
+Aerosols_and_Climate.pdf,374,"Measurements of ambient aerosol
+properties
+James Allana and Duncan Watson-Parrisb
+Department of Earth and Environmental Sciences and National Centre for Atmospheric Science,
+University of Manchester, Manchester, United Kingdoma
+Atmospheric, Oceanic and Planetary Physics, University of Oxford, Oxford, United Kingdomb
+Summary. Many climate-relevant particle properties can only be measured reliably “in situ”—that is,
+directly in the atmosphere. Such measured particle properties provide an essential constraint on remote
+sensing observations and on model simulations. This chapter describes the wide range of instruments
+that are used to measure particle microphysical and optical properties and how such measurements are
+used to evaluate models.
+The small size and low fractional contribution of aerosol particles to atmospheric material present
+several substantial technical challenges. A large suite of instruments is often required to characterize
+the multiple properties of atmospheric particles of relevance to climate, including physical properties
+(size and particle mass and number concentrations), chemical composition, optical properties, and the
+interaction of particles with water vapor to form hazes, cloud droplets, and ice particles. Many instruments are available, each employing different technologies with different practical considerations.
+Some complex, labor-intensive measurements are better suited to “intensive” short-term measurements, while more autonomous instruments are suited to long-term monitoring.
+Instruments have been deployed on a variety of platforms including ground stations, ships, and aircraft. Special attention must be paid to the design of the installation to minimize (or at least characterize) the losses of particles within the atmospheric inlet and the intervening line between the inlet and
+the instrument. Special consideration must be paid to the line material, its geometry (bore and bends),
+flow rate, and any splits or subsamples, relevant to the particle sizes of interest. Standardized methods
+of dealing with these challenges are specified by programs such as the Global Atmosphere Watch
+(GAW). Deployments of instruments on aircraft and ships present their own technical challenges related to the motion of the platform.
+After measurements have been made, the data must be carefully and systematically processed to
+ensure consistency, reliability, and ease of access. This includes providing data in the form of a usable
+file type and with the appropriate metadata before submission to a database for distribution and
+archiving. A few publicly accessible databases exist that collect long-term, in situ aerosol data from
+around the world relevant for climate science including Global Atmosphere Watch (GAW), Interagency Monitoring of Protected Visual Environments (IMPROVE), Aerosols, Clouds and Trace gases
+Research InfraStructure Network (ACTRIS), In-service Aircraft for a Global Observing System
+(IAGOS), and the Global Aerosol Synthesis and Science Project (GASSP). Each of these includes a
+defined protocol for the methods of data collection, processing, quality assurance, and archiving.
+Copyright # 2022 Elsevier Inc. All rights reserved.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,375,"Chapter 9 Measurements of ambient aerosol properties
+There are several important considerations in the comparison of in situ aerosol measurements
+against models. Special care must be taken to define the units, whether “ambient” or “standard” volume
+metrics are being used for mass and number concentrations, and the different definitions of particle
+diameters, namely volume-equivalent, mobility, and aerodynamic diameters. These are properties
+of the specific instrument used not only to perform the measurement but also to dictate the nature
+of their impacts on atmospheric processes and climate. A significant challenge is that many in situ measurements are spatially and temporally discrete and particular care must be taken to ensure that this
+does not bias any measurement-model comparison.
+Large databases of many measurements in different locations and different times can provide a
+valuable constraint on models. Several case studies of measurement-model comparison are presented
+as examples of how in situ measurements have helped to improve models.
+9.1 Measurement principles and instruments
+While not offering the most extensive coverage of global atmospheric composition, in situ measurements provide unparalleled accuracy and intensity of measurement, albeit at a specific location and
+time. In situ measurements are particularly valuable for aerosol because many important particle properties cannot be measured using remote sensing techniques (Chapter 10). In situ measurements are
+technically challenging, not only because atmospheric particles are very small and carry little mass
+but also because there are a very large number of climate-relevant properties. Many varied technologies
+have been applied to this task (Hidy, 2019; Kreidenweis et al., 2019). Here, we summarize the properties measured and instruments used, along with best practice. For further reading regarding the fundamental principles of measurement, the reader is directed to Kulkarni et al. (2011) and Hinds (1999).
+In Box 9.1, we provide a brief history of in situ aerosol measurements.
+9.1.1 Units and particle diameter definitions
+Before discussing the specific measurements, it is important to define the units and conventions normally used in the measurement and reporting of aerosol particles. Formalized conventions exist
+(Section 9.3.1), although not all aerosol datasets conform, so this section covers the informal conventions used by the measurement community.
+9.1.1.1 Concentration units
+Particle concentration normally refers to the number of particles per unit volume of air (with units per
+cubic centimeter, cm3) or the mass of a particular constituent per unit volume of air (in micrograms
+per cubic meter, μg m3).
+A key consideration when reporting or interpreting these quantities is the volume metric being
+reported; often these will be referred to as “ambient” or “standard” concentrations. Ambient concentrations are those reported under the atmospheric conditions of temperature and pressure (hence air
+density) of the measurement, whereas standard concentrations are adjusted to what would be measured
+at standard temperature and pressure (STP), accounting for expansion, compression, heating, or cooling as necessary. The IUPAC preferred values are 273.15 K and 105 Pa (Calvert, 1990); however, other",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,376,"9.1 Measurement principles and instruments
+BOX 9.1 History of in situ aerosol measurements
+The first in situ measurements of atmospheric aerosol relevant to climate were made by Aitken in the late nineteenth century
+(Aitken, 1888). His “condensation nucleus” counters used a rapid expansion to rapidly cool an air sample, causing particles
+to form droplets that were countable optically. This formed the basis of modern condensation particle counters (McMurry,
+2000b), and this innovation allowed new and important insights into the behavior of atmospheric aerosols and pollution
+(Landsberg, 1934), the nature of cloud formation (Wilson and Thomson, 1897), and the presence of aerosol in the stratosphere ( Junge et al., 1961). Atmospheric particles with diameters around 50–100 nm are still referred to as the Aitken mode.
+The 1960s and 1970s saw the development of many other counting instruments that could be deployed on research aircraft,
+such as cloud condensation nuclei counters, optical particle counters, and cloud spectrometers (Knollenberg, 1981; Schuster
+and Knollenberg, 1972; Squires and Twomey, 1966). These in turn facilitated many scientific advances in aerosol–cloud
+interactions, in particular cloud brightening in response to anthropogenic emissions (Twomey, 1974).
+Widespread monitoring of atmospheric aerosol began in the 1950s, as the quantitative linkages between poor air quality
+and adverse health outcomes became established and legislation began to be imposed (Brimblecombe, 1987; Fowler et al.,
+2020). This included measurements of mass concentrations and light attenuation of particulate matter collected on filters, but
+these early urban measurements are of limited use for climate science. Later, measurements began to incorporate chemical
+analysis (Friedlander, 1973) and size-resolved information, greatly facilitated by the development of mobility size spectrometers (Flagan, 1998; Whitby et al., 1972). In the 1980s, monitoring in rural areas started to become more common and
+these also included measurements of particle composition and aerosol optical properties (Malm et al., 1994).
+As further research was motivated into the role of aerosols in climate (e.g., Charlson et al., 1987, 1992; Penner et al.,
+1994), more detailed, climate-oriented in situ measurements took place in the 1990s (e.g., Bates et al., 1998; Raes et al., 2000;
+Sheridan et al., 2001). These also included the first measurements of atmospheric new particle formation (Kulmala et al.,
+2004). By the end of the twentieth century, chemical composition measurements also reached a new level of maturity, with
+the refinement of techniques for the analysis of the carbonaceous fraction, development of semicontinuous analyzers, and
+online aerosol mass spectrometry (McMurry, 2000a; Noble and Prather, 2000; Turpin et al., 2000).
+The subsequent proliferation and further development of these techniques (Laj et al., 2009) provided evidence of the
+importance of organic aerosol in the atmosphere (Hallquist et al., 2009; Heald et al., 2008; Jimenez et al., 2009). Further
+innovations in mass spectrometry have facilitated the study of the nucleation process on a fundamental chemical level
+(Kulmala et al., 2014) and resolved the molecular composition of the organic fraction at the interface of the gas and particle
+phases (Gentner et al., 2012; Heald and Kroll, 2020). In addition, the twenty-first century has seen developments of single
+particle instruments for the online detection of black carbon and bio-particles (Huffman et al., 2019; Schwarz et al., 2006),
+and improved measurements and understanding of the light-absorbing properties of carbonaceous particles (Bond et al.,
+definitions exist; for instance EBAS (Section 9.3.2) defines standard pressure as 1013 hPa. Measurements adjusted to STP often prefix the volume unit with “s,” that is, s cm3 and μg sm3.
+Standard concentrations remain constant as temperature and pressure vary. So for a well-mixed
+boundary layer, a standard concentration will be the same at all altitudes, whereas the ambient concentration will decrease with altitude. Converting from standard to ambient requires knowledge of temperature and pressure as a function of altitude, so the conditions under which sampling was performed
+should also be reported. A conversion between standard and ambient concentration may also need to
+consider the partial pressure contribution from water vapor if measurements are made in a particularly
+warm and humid environment (e.g., inside a tropical forest canopy).
+9.1.1.2 Definitions of particle diameter
+Measured particle sizes are typically reported as diameters but this is often an equivalent diameter
+according to the measurement technique used. To compare data products or to relate them to a model,
+conversions between these different diameters must be applied. The conventions used here are as",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,377,"Chapter 9 Measurements of ambient aerosol properties
+defined by DeCarlo et al. (2004) and the reader is directed there for the physical principles and
+derivations.
+Volume-equivalent diameter, dv is the most basic definition of particle size and is defined as the
+diameter of a sphere with the same volume as the particle in question. This is the basis for most aerosol
+models and will be used as the basis for the size definitions here. It is not measured directly by any
+instrument, but it can be calculated from the particle mass (mp), which is measurable using instruments
+such as aerosol particle mass analyzers (Section 9.1.2.4), provided the particle density (ρp) is known:
+sﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+The volume and density of the particle must be carefully defined when the particles may contain internal voids, for example, in soot particles.
+Electrical mobility diameter, dm is reported by electrical sizing instruments (Section 9.1.2.4). For
+spherical particles, dv can be assumed to be equal to dm. When considering nonspherical particles (e.g.,
+soot, dust), a dimensionless dynamic shape factor (χ) is introduced, which reflects the increase in aerodynamic drag force relative to a sphere of equivalent volume. This quantity is 1 for spherical particles
+and larger than 1 for nonspherical particles (Slowik et al., 2004; Tavakoli and Olfert, 2014). Because
+many particle sizes are comparable to the mean free path (λ) of the gas molecules (66 nm in air at STP),
+the Cunningham slip correction (Cc) is also included to account for deviations from Stokes’ law (Fuchs,
+1964). These combine to form the following relationship:
+1 Cc ðdv Þ
+χ Cc ðdm Þ
+The parameters in Cc(d) are empirically determined, with the NIST-preferred values being α ¼ 1.165,
+β ¼ 0.483 and γ ¼ 0.997 (Kim et al., 2005). Explicitly accounting for this during a diameter conversion
+requires a numerical solution of the function. While unnecessary for a sphere, the application of this
+correction would account for an adjustment of 26% when calculating the dv of a particle with
+Aerodynamic diameter, da is reported by instruments such as the Aerosol Particle Sizer
+(Section 9.1.2.2), Aerodynamic Aerosol Classifier (Section 9.1.2.4), size-selective inlets
+(Section 9.2.1), and cascade impactors (Section 9.1.2.1), which size particles according to their motion
+and inertia in accelerating flows. da depends on χ and Cc as well as the density of the particle relative to
+a reference value (ρ0), which is conventionally the density of water (1 g cm3). Because atmospheric
+aerosol particles usually have a density greater than this (Cross et al., 2007), dv should not routinely be
+equated to da. The aerodynamic diameter can be converted to dv as follows:
+sﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+Cc ðda Þ ρ0 χ
+Cc ðdv Þ ρp
+Note that χ has the opposite effect on da compared to dm. Because they are often considered in tandem,
+ρp divided by χ is often referred to as the “effective density” (ρeff). For a particle of dv ¼ 100 nm and
+ρeff ¼ 1.4 g cm3, the ratio of Cc values represents a correction to diameter of approximately 6%, but
+this diminishes to 1% for a 1 μm particle, so depending on the accuracy required, this part of the calculation could be omitted for larger particles.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,378,"9.1 Measurement principles and instruments
+Vacuum aerodynamic diameter, dva is reported by aerosol mass spectrometers (Section 9.1.3.5)
+and differs from da because the sizing is performed at a much lower pressure (typically on the order of
+102 Pa), where λ is much greater than the particle diameter, therefore the particle drag force behaves
+more in line with kinetic theory rather than Stokes’ law. This changes the definition as follows:
+dv ¼ dva 0
+Note that because χ is an empirical parameter, it is not intrinsically preserved across different pressure
+regimes, so may differ between dva and da for a given nonspherical particle.
+Optical diameter, do is sometimes referred to in the data products of optical particle counters
+(Section 9.1.2.2); however this lacks a fundamental definition because the sizing is dependent on
+the geometry of the instrument and the wavelength of light used. A particle’s reported diameter can
+vary from dv due to variations in shape and refractive index, but the manner in which it does this will
+be instrument-specific.
+9.1.1.3 Size distributions
+Many instruments report concentrations over a range of particle sizes (Fig. 9.1). It is conventional to
+report size distributions as a function of logarithmic diameter. Because of technical limitations and
+calibration issues, the specific diameters that instruments detect particles at are irregularly spaced
+and are inconsistent between datasets and instruments. To make size distributions comparable, it is
+standard practice to report them as a density function, also known as a differential size distribution
+d(N(d))/dlog(d), that is, the number of particles per unit volume per log diameter interval of the size
+bin (Kulkarni et al., 2011; Seinfeld and Pandis, 2016).
+Some instruments report number concentrations within a size bin, so the differential quantity
+d(N(d))/dlog(d) is calculated by dividing the number of particles in the bin by the logarithmic difference between the upper and lower bin boundaries, or log(dupper/dlower). The units of d(N(d))/dlog(d) are
+the same as for the number concentration within a bin (e.g., cm3), as dlog(d) is dimensionless. Although base 10 logarithms are normally used (and usually specified by databases), natural logarithms
+can occur, that is, d(N(d))/dln(d). To convert these to base 10 , they must be multiplied by a factor of
+Particle number size distributions can be converted to a particle mass size distribution or d(M(d))/
+dlog(d) by weighting each value by (π/6)ρpdcentre, where ρp is the material density (often assumed) and
+dcentre is the geometric center of a size bin. This assumes the particles are spherical, so if particle shape
+is known, this can also be included. Particle volume and surface area size distributions can also be
+generated using their appropriate weightings.
+9.1.1.4 Uncertainties, limits of detection, and time resolution
+The measurement frequency and the certainty that can be attached to the measurement varies greatly
+between the quantities being measured and the technique used. The term “time resolution” is used to
+describe the time required to report a measurement. This can be because of the time taken to complete a
+scan or the length of time generally required to collect enough material to analyze. However, many of
+the instruments here can be described as “real time” measurements with no intrinsic time resolution
+limit. Instruments that detect discrete particles, such as those measuring number concentrations, do
+not have a fundamental detection limit in terms of the number of particles that must be present; however",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,379,"Chapter 9 Measurements of ambient aerosol properties
+Illustrative size ranges of common measurement techniques used in in situ particle measurements.
+Dark gray signifies common size ranges, whereas light gray signifies size ranges of limited capability
+or those specific to certain variants.
+they may have a detection limit in terms of a minimum size of particle that can be detected
+Online and offline are terms used to define at what point a measurement is made. In an online
+instrument, the measurement is made in real time and the aerosol sample is not collected, but its properties are measured as it passes through the instrument. An offline measurement means that the aerosol
+particles are collected in some way (e.g., on a filter) and analyzed at a later time, for example, in a
+laboratory.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,380,"9.1 Measurement principles and instruments
+The uncertainties associated with specific instruments can be highly complex. Instruments that
+count particles follow a stochastic error model whereby the precision associated with a measurement
+is proportional to the square root of the number of particles detected (the signal) and thus the signal-tonoise ratio is inversely proportional to this. The signal-to-noise ratio of an individual data point can be
+improved by measuring for a longer time period. The uncertainty associated with offline analysis of
+composition (Section 9.1.3) can vary greatly between techniques and laboratories. Precision and detection limits for offline analysis can be improved by sampling for longer, using a higher flow rate
+sampler and in the case of cascade impactors, using fewer stages. Consequently, where values of detection limit and time resolution are given in this chapter, they should be treated as approximate, as
+these may vary with the specifics of the instrument, operational protocol, and the environment they
+are operated in. Approximate errors are given in Table 9.1, intended as indicative of typical measurements. Note that some modern networks (e.g., ACTRIS) specify higher tolerances than this, so it is
+important to consult the technical documentation of a specific network when using data.
+Table 9.1 Typical instruments used for measuring atmospheric aerosol in situ, with approximate
+representative performance characteristics
+Typical lower
+cut diameterb
+Indicative
+resolution/
+Indicative
+concentration
+APS (APSS)
+CCNC (CCN)
+(aerodynamic)
+Offline analysis
+N/A (filters)
+Semicontinuous
+4 stages per
+impactors)
+Aerodyne AMS
+resolutiona
+(DMPS, SMPS,
+Instrument
+Specification
+highly dependent
+Continuous flow
+instruments can
+operate in real
+time at fixed SS
+Specification
+strongly method
+Specification
+strongly method
+Can be run realtime (e.g., for
+aircraft or flux",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,381,"Chapter 9 Measurements of ambient aerosol properties
+Table 9.1 Typical instruments used for measuring atmospheric aerosol in situ, with approximate
+representative performance characteristics—cont’d
+Typical lower
+cut diameter
+Indicative
+resolution/
+Indicative
+concentration
+triggering)
+aerodynamic
+measurements
+(extinction,
+scattering
+absorption)
+Filter-based
+absorption
+150 nm (total
+resolution
+Single particle
+Instrument
+Typically not
+quantitative for
+mass, semiquantitative for
+ACSM, aerosol chemical speciation monitor; AMS, aerosol mass spectrometer; APS, aerosol particle sizer; CCNC, condensation
+nucleus counter; CPC, condensation particle counter; MPSS, mobility particle size spectrometer; MS, mass spectrometer; OPC,
+optical particle counter; SP2, single particle soot photometer
+Longer averaging times may be required in low-concentration environments.
+Refer to instrument description for sizing metric used.
+9.1.2 Measuring the mass, number, and size of particles
+Some of the longest-standing measurements of aerosol particles concern the number or mass concentration, or particle size.
+9.1.2.1 Gravimetric and equivalents
+The particle mass concentration can be measured by pulling a known air flow rate through a filter over a
+defined duration (typically around a day) and comparing the mass of the filter before and after. The
+filter should be of a material and porosity that is known to collect 100% of particles at the flow rate
+used. By dividing the collected mass by the volume of air sampled, a mass concentration can be
+obtained. Because the particulate matter and the filter material may be hygroscopic, it is normal to
+condition the filters (e.g., at 20°C, <40% RH) for a day prior to weighing.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,382,"9.1 Measurement principles and instruments
+If all particles are collected on the filter, this is known as Total Suspended Particulate (TSP), but
+often it is preferable to report the mass of “fine” particles smaller than a certain size, as is the case in
+health studies. This is normally performed by using a size-selective inlet (Section 9.2.1) ahead of the
+sampling device and reported as “PMx,” where “x” (in μm) is the aerodynamic diameter at which 50%
+of the particles are removed.
+Size-resolved collection is possible using a cascade impactor in which particles are directed through
+nozzles and deposited on a perpendicular surface through impaction. Depending on the air velocity,
+pressure, and distance between the nozzle and surface, particles above a certain aerodynamic diameter
+will attach to the collection surface. By using a sequence of impaction surfaces with progressively
+lower distances and narrower nozzles, collection of material as a function of aerodynamic diameter
+can be achieved (Berner et al., 1979; Marple et al., 1991). By way of example, the model 110 Micro
+Orifice Uniform Deposit Impactor (MOUDI) collects particles over 11 logarithmically spaced stages
+between 56 nm and 18 μm at a flow rate of 1.8 m3 h1.
+For continuous monitoring, samplers can automatically expose filters according to a programmed
+time interval (see Section 9.1.4). For real-time monitoring a Taped Element Oscillating Microbalance
+(TEOM) will sense mass accumulation on a substrate through changes in its resonant frequency (Chung
+et al., 2001). For semicontinuous measurement (as defined in Section 9.1.3), a beta attenuation monitor
+(BAM) measures the reduction of beta radiation penetration through an exposed filter on a strip, which
+is proportional to the mass of collected material.
+General limitations of this technique are that time resolution is limited to (typically) daily for offline
+analysis and hourly for online. While size fractionation is possible using cascade impactors and selective inlets, the amounts of mass present at diameters smaller than 100 nm is generally below detection
+limit for gravimetric analysis in most atmospheric situations. Also, some particle components are semivolatile, so may exchange with the gas phase during sampling, handling, or conditioning, creating both
+positive and negative artifacts (Hering and Cass, 1999).
+9.1.2.2 Optical particle detection
+Optical particle counters (OPC), Optical Particle Sizers (OPS), or Optical Particle Size Spectrometers (OPSS) detect particles through scattered light. These measure particles larger than around
+200 nm diameter by drawing air into the instrument through an illuminated region (typically using a
+laser beam) and detecting the individual particles as pulses of scattered light. In addition to reporting
+a number concentration, a size distribution can be generated by measuring the size of the light pulses
+(Kulkarni et al., 2011). Because the diameter of the particles is comparable to the wavelength of the
+light used, resonances in the scattering function (Chapter 11) introduce inherent ambiguities in the response function of the instrument and therefore limit its sizing resolution (Szymanski and Liu, 1986).
+Particle sizes expressed as do (Section 9.1.1.2) are usually calibrated to a traceable test aerosol, but
+these are instrument specific and should not be treated as absolutely accurate.
+OPCs have a low-diameter limit defined by the detection limit of the detector. The GRIMM model
+1.108 portable aerosol spectrometer and TSI model 3330 Optical Particle Spectrophotometer (OPS)
+can measure particles larger than 300 nm diameter, whereas the DMT Ultra High Sensitivity Aerosol
+Spectrometer (UHSAS) can measure particles as small as 60 nm. OPC data can be used to estimate a
+mass concentration (Section 9.1.3.1), but as assumptions must be made concerning shape and refractive
+index, this should only be taken as indicative (Binnig et al., 2007).",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,383,"Chapter 9 Measurements of ambient aerosol properties
+Aerodynamic Particle Sizers (APS), or Aerosol Particle Size Spectrometers (APSS) also detect
+particles optically but use two light fringes to detect the velocity of particles after a nozzle expansion,
+and thus infer their aerodynamic diameters (Section 9.1.1.2). For larger particles (>500 nm diameter),
+this is an alternative means of determining diameter that is not subject to the complications associated
+with scattering models (Baron, 1986). For smaller particles (>370 nm), they are still capable of optical
+counting, but not aerodynamic sizing.
+In situ measurements of cloud particles are performed to calibrate and validate remote sensing
+products and directly study aerosol–cloud interactions (Baumgardner et al., 2011). Instruments such as
+the Forward Scattering Spectroscopy Probe (FSSP) and Cloud Droplet Probe (CDP) are open-path
+OPCs optimized for larger particles (>10 μm diameter) and are used to measure the number concentration and size of cloud particles (Brenguier et al., 1994; Faber et al., 2018). By using back- rather than
+forward-scattered light, the backscatter cloud probe (BCP) eliminates the need to locate a probe outside
+an aircraft’s fuselage, although it is not as accurate (Beswick et al., 2014). Total particle water content
+can be measured independently of optical probes using a “hot wire,” where the current required to
+maintain a resistively heated surface at a fixed temperature is related to the incident water’s latent heat
+of vaporization (King et al., 1978).
+The shape of ice and precipitation particles can also be detected by using multichannel detectors
+(Baumgardner et al., 2017). These can measure the intensity of scattered light at different angles and/or
+polarizations, recording the shadow of a cloud particle on a linear detector array as it passes through a
+light curtain, or imaging a particle on a 2D array when it is illuminated by pulsed light source. Many
+different instruments of these types exist and are suited to different sizes of cloud or precipitation particles, but examples include the Cloud Imaging Probe (CIP), Two-Dimensional Stereo probe (2D-S),
+and Cloud Particle Imager (CPI). Because general-purpose comprehensive characterization is not possible with just one instrument, instruments like the Cloud Aerosol and Precipitation Spectrometer
+(CAPS) work by combing multiple cloud sensors (Baumgardner et al., 2001).
+9.1.2.3 Condensation particle counters
+Condensation particle counters (CPC), or Condensation Nuclei Counters (CNC), use optical scattering to count aerosol particles that have been grown to larger sizes in a supersaturated vapor
+(Agarwal and Sem, 1980; McMurry, 2000b). Most systems use butanol vapor to grow the particles
+because it readily condenses on most particle types, although some systems use water (Hering
+et al., 2005). The diameter at which a CPC detects particles at 50% efficiency is known as the lower
+detection efficiency diameter or simply lower cut-off. The cut-off diameter depends on the specific
+instrument but is typically between 2 and 10 nm (Sem, 2002), and particles only a few nanometers
+larger should be detected with 100% efficiency. Well-maintained and calibrated CPCs have an accuracy of better than 5% and a very high precision in terms of signal-to-noise, as the number of particles
+counted tends to be very high.
+As a measure of the number concentration of particles, CPCs are regarded as more accurate than
+OPCs because their lower cut-off diameter is smaller and better defined, but information concerning
+size is lost. It is possible to obtain size-resolved data through the use of CPCs in combination with
+diffusion batteries, but this technique is no longer favored (Knutson, 1999). Size-resolved information
+can also be obtained by using a combination of CPCs with different cut-offs (Kulmala et al., 2007;
+Williamson et al., 2018), which has the ability to delivery real time data, unlike scanned differential
+classification (Section 9.1.2.4).",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,384,"9.1 Measurement principles and instruments
+9.1.2.4 Particle size classifiers
+Differential mobility analyzers (DMAs) can measure a complete particle size distribution by sizeselecting particles prior to counting. DMAs can size particles up to around 1 μm diameter, depending
+on the design. Particles are charged using a bipolar ion field and then electrostatically drifted through a
+laminar, particle-free sheath flow between two electrodes (Knutson and Whitby, 1975; Winklmayr
+et al., 1991). The electrodes are normally in a coaxial cylindrical configuration, although others exist
+such as radial or parallel plate (e.g., Amanatidis et al., 2020). Particles of a certain electrical mobility
+diameter (Section 9.1.1.2), determined by the sheath flow rate and applied voltage, are extracted
+through a slit in the opposing electrode and this monodisperse aerosol (containing particles of only
+one size, as opposed to polydisperse) is then passed to another instrument for counting (Fig. 9.2).
+Mobility Particle Size Spectrometers (MPSS) normally use a combination of a DMA and CPC,
+although instruments with electrometer-based detectors also exist (Section 9.1.4). Common names include the Scanning Mobility Particle Sizer (SMPS), Differential Mobility Particle Sizer (DMPS) or
+Scanning Electrical Mobility Spectrometer (SEMS). By using a fixed flow configuration and stepping
+or scanning the DMA voltage, these generate a size distribution as a function of mobility diameter
+(Flagan, 1998; Wiedensohler et al., 2012). Corrections must also be applied to account for the sizedependent bipolar charge distribution (ISO 15900) (Liu and Pui, 1974; Wiedensohler, 1988). If properly maintained and calibrated, these are generally regarded as highly accurate in terms of total number
+and size, given that mobility diameter is equivalent to geometric diameter for spherical particles
+(Section 9.1.1.2). A given unit will be able to cover a size range set by the size of the DMA and
+the internal air flow rates, typically spanning a little over an order of magnitude in diameter space.
+To cover a more extensive size range (e.g., 3 nm to 1 μm), it is common to run two systems in parallel
+with different DMA lengths.
+The sizing accuracy of most differential spectrometers should be better than 3% and around 5% or
+better for number, reflective of the CPC used to detect the particles (Wiedensohler et al., 2018), but
+additional uncertainties have been reported for particles smaller than 100 nm (Lepp€a et al., 2017;
+Liu and Deshler, 2003). The number concentration precision is also intrinsically worse than for standalone CPCs, as fewer particles are being detected at any one time. The time resolution is limited by the
+time taken to perform a scan, which is typically between 10 s and 10 min. While faster scan times are
+often desirable, these reduces the accuracy of sizing (Mai et al., 2018).
+Centrifugal classifiers such as the Aerosol Particle Mass analyzer (APM), Centrifugal Particle
+Mass Analyzer (CPMA) and Aerodynamic Aerosol Classifier (AAC) allow particles to be studied
+as a function of aerodynamic diameter or particle mass as opposed to mobility diameter (Broda
+et al., 2018; Ehara et al., 1996; Tavakoli et al., 2014). While these have been applied to atmospheric
+aerosol, their large moving parts mean they are not suited for routine monitoring.
+9.1.3 Measuring chemical composition
+In order to better understand the sources of particles in the atmosphere and their potential effects and
+better inform and constrain climate models, it is necessary to measure the particle composition in addition to the mass concentration, number concentration, and size distribution. Methods of composition
+measurement can be grouped into three general categories: offline, semicontinuous, and online. ""Offline analysis"" generally employs the same sampling systems used for gravimetric analysis such as filters or cascade impactors (Section 9.1.2.1), but the particulate matter collected can be subjected to",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,385,"Schematic for the recommended Mobility Particle Size Spectrometer (MPSS) design according to the EUSAAR specification for size distribution
+measurements.
+Reproduced from Wiedensohler et al. (2012).",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,386,"9.1 Measurement principles and instruments
+additional chemical analysis. ""Semicontinuous analysis"" employs the same principles as offline, except
+an automated system analyzes the material collected in situ after a period of sample collection. The
+advantage of this approach is that it increases the frequency of sample collection (typically hourly instead of daily) and eliminates problems associated with sample handling. However, this makes operation more complex and potentially less reliable. ""Online analysis"" eliminates the sample collection
+phase entirely, performing direct chemical analysis in real time; however this is limited to certain analytical techniques such as mass spectrometry.
+A wide variety of methods are available that are suited to different aspects of the composition with
+the amounts of particulate matter needed to be collected ranging from micrograms to milligrams per
+sample. The larger amounts can be obtained by sampling onto a filter for longer; however there are also
+high-volume samplers that sample at a higher flow rate to increase the sample mass for a given sampling period. Common examples of automated filter samplers include the Partisol 2025i, which samples through 47 mm filters at up to 1.2 m3 h1 (a ""low-volume"" sampler), and the Digitel DHA-80,
+which samples through 150 mm filters at up to 60 m3 h1 (a ""high-volume"" sampler).
+The following are various techniques of composition measurement grouped according to the atmospheric particle types of interest, followed by a section on aerosol mass spectrometry, which is a more
+general-purpose online technique. For further reviews of the specific methods, the reader is directed to
+Laj et al. (2009), Chow and Watson (2013) and Johnston and Kerecman (2019).
+9.1.3.1 Soluble ions
+Several methods are available for offline analysis of the soluble inorganic fraction of aerosol particles,
+originating from sea spray and the formation of secondary inorganic matter such as sulfates and nitrates. Filter or impactor samples (most typically taken from daily samples) can be extracted into deionized water (using sonication) and then analyzed using standard techniques such as ion
+chromatography (IC) or UV–vis spectroscopy. This will deliver quantitative mass concentrations of
+soluble inorganic ions present in the samples (sulfate, sodium, chloride, nitrate, ammonium, etc.) with
+some small organic molecules (e.g., oxylate, methane sulfonate). This very common technique tends to
+underestimate semivolatile components such as ammonium nitrate (Hering and Cass, 1999).
+Direct sampling of aerosol into solution using steam-based systems avoids the potential for contamination or the evaporation of semivolatiles during sampling or handling of filters (Khlystov et al., 1995;
+Weber et al., 2001). Examples include the Particle Into Liquid Sampler (PILS) and Steam Jet Aerosol
+Collector (SJAC), which are used as collection devices in semicontinuous IC instruments such as the
+Monitor for Aerosols and Gases in ambient Air (MARGA) or Ambient Ion Monitor (AIM) (Chen et al.,
+2017). These report concentration data with a time resolution of hours, and some can report data on
+gases and particles in tandem, but size-resolved measurements are not possible. Online and sizeresolved analysis is possible using aerosol mass spectrometers, although quantitative analysis is limited
+to the non-refractory ions, so measuring sea salt is difficult (Section 9.1.3.5).
+9.1.3.2 Mineral dust
+Atmospheric mineral dust is difficult to quantify through chemical analysis because most components
+of dust are not water-soluble. A common technique is the acid digestion of filter or impactor samples
+followed by inductively coupled plasma analysis coupled with mass spectrometry or atomic (optical)
+emission spectroscopy as the detector (ICP-MS, ICP-AES). This can deliver concentrations of metals
+(e.g., iron, aluminum, potassium, etc.) which can be related to the mass concentration of dust if the",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,387,"Chapter 9 Measurements of ambient aerosol properties
+mineralogy is known (Formenti et al., 2011). Metals can also be analyzed using various forms of spectroscopy such as X-ray fluorescence (XRF). Detection limits can be enhanced by using a high-intensity
+source during offline analysis, such as a synchrotron (Bukowiecki et al., 2005) and semicontinuous
+analysis is also possible (Tremper et al., 2018), which can deliver data on an hourly basis. Online analysis is possible with single particle aerosol mass spectrometry, although this is not quantitative for mass
+Another common method for offline mineral dust analysis is subjecting samples to various forms of
+electron microscopy, which is more feasible for dust particles than others because of their size and
+robustness. This allows the morphology to be directly inspected and various spectroscopy techniques
+can be employed to study the particle composition (Ault and Axson, 2017).
+9.1.3.3 Carbonaceous components
+Much of the atmosphere’s particulate matter is composed of carbonaceous material, which can be
+broadly categorized as refractory soot, organic matter, and carbonates. While carbonate (originating
+from mineral dust and sea spray) has a defined chemical form, definitions of the other fractions vary
+and are largely operationally defined by a given measurement technique. There are various terms such
+as ""elemental carbon,"" ""black carbon,"" and ""graphitic carbon"" that are often used to describe the refractory carbonaceous matter arising from combustion (i.e., the material that is not decomposed by
+heat), however each definition has its own technical nuance, and they are not synonymous. For an authoritative discussion on the different definitions, the reader is directed to Petzold et al. (2013).
+The total amount of carbon in a sample can be determined using thermal-optical analysis (Birch
+and Cary, 1996; Cavalli et al., 2010). In this technique a sample is heated in an inert atmosphere to
+measure the organic carbon (OC) and then again in an oxidizing atmosphere to quantify the elemental
+carbon (EC). The mass of other elements in the organic molecules (in particular, oxygen, and hydrogen) is not measured so is not a strict mass measurement. The dividing line in the analysis between
+organic and elemental carbon, known as the split point, is critical for quantification. Various protocols
+exist for this analysis, the most common being IMPROVE, NIOSH, and EUSAAR-2 (Cavalli et al.,
+2010). Samples are typically collected daily, but a semicontinuous version (Bauer et al., 2009) can
+deliver data at a time resolution of hours. Much of the inaccuracy of the EC and OC data products stems
+from ambiguities in the split point, particularly when the organic matter is involatile, as with biomass
+burning. Semivolatiles may also cause both positive and negative artifacts (Schauer et al., 2003). Given
+these effects are environment-specific, they are hard to generalize in the form of a single accuracy
+statistic.
+The organic fraction (defined as the fraction consisting of compounds containing carbonhydrogen bonds) can be analyzed in more detail through analysis of the molecular composition. This
+can be done using a wide range of established laboratory techniques such as gas chromatography, liquid
+chromatography, and mass spectrometry (Johnston and Kerecman, 2019; Nozière et al., 2015). There
+are many challenges with this analysis, including difficulties in extracting certain species (in particular
+oligomers), the lack of standards for unconventional molecules, and the sheer diversity of molecular
+structures. Nevertheless, many hundreds of thousands of individual species can be observed in atmospheric particles. Spectroscopic analysis of bulk functionality is also possible (Decesari et al., 2000;
+Russell et al., 2009). It is not generally possible to quantitatively account for all of the organic matter
+present in the atmosphere on a molecular level, although recent advances in analytical techniques have
+improved this substantially in recent decades (Heald and Kroll, 2020).",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,388,"9.1 Measurement principles and instruments
+The amount of soot present on a filter sample is manifested in its darkness and this can be quantified in terms of the light reflection or transmission of a filter, which can in turn be used to infer ""equivalent black carbon"" or eBC. This technique formed the basis of metrics such as “black smoke” and
+“coefficient of haze” used for urban air quality monitoring from the 1950s onwards (Quincey et al.,
+2011; Wolff et al., 1983). Most modern measurements of this type perform analysis online by measuring light transmission through a filter as it collects a sample (Hansen et al., 1984; M€uller et al., 2011).
+Examples include the Aethalometer, Multi Angle Absorption Photometer (MAAP), Particle Soot Absorption Photometer (PSAP), and Tricolor Absorption Photometer (TAP). The Aethalometer and
+MAAP use a reel-to-reel filter tape, which can be automatically advanced as a given section saturates,
+making them suited for long-term automated monitoring. These instruments typically report with a
+time resolution of around 5 min, with a lower detection limit of around 0.1 μg m3 eBC. The quantification of eBC is dependent on calibration factors and can be subject to several artifacts associated
+with complexities of measuring light-absorbing particles on a filter (Collaud Coen et al., 2010).
+Because some organic compounds absorb light at shorter wavelengths, the rate of change of attenuation at longer wavelengths (typically 660–950 nm) is usually used to calculate eBC, calibrated to EC
+determined using thermal–optical analysis. Where instruments are capable of measuring at multiple
+wavelengths, any absorption at shorter wavelengths (370–470 nm) over what would be expected for
+the black carbon detected is ascribed to ""brown carbon"" (BrC). This can in turn be used to try to apportion the black carbon to different sources such as fossil fuel versus wood burning, the latter of which
+has a higher BrC content (Sandradewi et al., 2008). BrC can also be measured through UV-Vis analysis
+of solvated extracts (Wang et al., 2014).
+The Single Particle Soot Photometer (SP2) is an online instrument that uses an active nearinfrared laser to selectively vaporize black carbon particles and the mass of ""refractory black carbon""
+(rBC) can be determined on a per particle basis by observing the magnitude of incandescence as they
+vaporize (Laborde et al., 2012; Schwarz et al., 2006). This instrument can provide quantitative rBC
+number and mass concentrations in real time for testing models (Reddington et al., 2013). The SP2
+has a lower cut-off of particles containing less than around 0.5 fg of rBC and an upper cutoff of around
+1 pg of rBC where the detector either saturates or large particles are lost in the inlet system. Accuracy in
+terms of mass is around 10%, although this may deteriorate if a large amount of rBC mass exists in very
+small or very large particles. The instrument is also capable of inferring the overall size of particles
+larger than approximately 150 nm diameter through detection of the light scattered as it enters the laser
+beam, which can be used to infer mixing state and optical properties (Liu et al., 2017). It is also capable
+of detecting iron oxides in dust particles (Section 9.1.3.2) as these also incandesce (Moteki et al., 2017).
+9.1.3.4 Bio-particles
+While data on organic carbon and specific molecules may indicate the presence of biological particles
+such as bacteria, fungal spores, and pollen, for many purposes such as the study of ice cloud interactions
+(Chapter 15), information on the precise nature of the particles such as biological species is needed.
+Biological types can be determined through inspection of morphology in offline electron microscopy.
+If enough sample is collected, biological assays such as culturing, gene sequencing, and omics-based
+approaches can be used (Šantl-Temkiv et al., 2019). To avoid contamination and to maintain viable
+cells, specialist sampling equipment is available such as spore traps and liquid impingers.
+Online bio-aerosol detection is feasible by employing the principle of fluorescence. Instruments
+include the Waveband Integrated Bioaerosol Sensor (WIBS) and Plair Rapid-C (Huffman et al., 2019).",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,389,"Chapter 9 Measurements of ambient aerosol properties
+Particles are illuminated with ultraviolet light and emitted light at certain wavelengths is monitored,
+corresponding to key molecules present in viable biological material. This multivariate data, along with
+scattered light, can be used to deduce the nature of the particle using machine learning techniques,
+noting that some nonbiological particles (e.g., those containing PAHs) are also capable of exhibiting
+fluorescence. Some single particle mass spectrometers (Section 9.1.3.5) are also capable of detecting
+bio-particles through analysis of mass spectral markers.
+9.1.3.5 Aerosol mass spectrometry
+The term ""aerosol mass spectrometer"" encompasses a range of instruments that use a form of mass
+spectrometry to analyze particles online (Pratt and Prather, 2012). These instruments are by design
+general purpose, although each technology has its own limitations, so they still do not represent a comprehensive characterization and are normally supplemented by other measurements.
+The Aerodyne Aerosol Mass Spectrometer (AMS) works by continuously impacting particles on
+a hot surface (600°C) under high vacuum and analyzing the vapors using electron ionization mass spectrometry (Canagaratna et al., 2007). The impaction is facilitated through the formation of a particle
+beam by an aerodynamic lens, which is optimized for a certain aerodynamic size range; in its default
+configuration, this is approximately 50–800 nm diameter, although a version able to detect particles up
+to 2.5 μm is also available (Xu et al., 2017). The AMS in its standard configuration does not deliver data
+on individual particles, but rather the overall ensemble. This includes quantitative mass concentration
+data on the ""nonrefractory"" components such as the ammonium salts (sulfate, nitrate, chloride), sulfuric
+acid and organic matter. The more refractory salts are not detected, so sulfate and chloride in sea salt
+and nitrate in aged sea salt and dust are not measured. Data can be reported at a time frequency of
+minutes or less with a detection limit of around 0.1 μg m3. By modulating the particle beam using
+a chopper wheel, mass concentrations as a function of vacuum aerodynamic diameter can be delivered.
+The AMS is also capable of quantifying organic particulate matter. While many organic molecules
+will not directly vaporize at 600°C, the AMS will detect their pyrolysis products, so the overall mass
+budget is conserved (Canagaratna et al., 2015). This, coupled with the high time resolution, has proved
+valuable in constraining models of organic aerosol (Heald et al., 2011; Spracklen et al., 2011). Because
+of the thermal vaporization, electron ionization, and lack of chemical separation, data on molecular
+composition is not retained; however it is possible to obtain generalized metrics such as oxygen to carbon ratio (Aiken et al., 2008). It is also possible to separate the organic mass spectral data using Positive
+Matrix Factorization, which can be used to quantify source contributions and chemical aging of secondary material ( Jimenez et al., 2009). However, while multiple types of oxygenated organic aerosol
+are often reported by this analysis, such as “more oxygenated” and “less oxygenated,” these represent
+the end points within a continuum of observed material within a given dataset and do not in themselves
+represent discrete chemical types or are universally applicable to all datasets. That said, there are exceptions, such as detecting methane sulfonate or isoprene secondary organic aerosol (SOA) formed
+through the IEPOX pathway (Hu et al., 2015; Zorn et al., 2008).
+The Aerosol Chemical Speciation Monitor (ACSM) is a variant of the AMS that is optimized for
+long-term monitoring (Fr€
+ohlich et al., 2013; Ng et al., 2011). While less expensive and less labor intensive, this sacrifices sensitivity, so the time resolution is typically minutes, data on organic elemental
+ratios is less accurate and less information is obtainable through factorization (Fr€ohlich et al., 2015).
+Single-particle mass spectrometers vaporize and ionize individual particles with powerful laser
+pulses to measure refractory components of particles (refractory carbon, sea salt, mineral dusts). These",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,390,"9.1 Measurement principles and instruments
+instruments deliver mass spectra on a per-particle basis so they can also measure particle mixing state
+(Murphy, 2007). Examples include the Aerosol Time of Flight Mass Spectrometer (ATOFMS), Single
+Particle Aerosol Mass Spectrometer (SPAMS), Particle Analysis by Laser Mass Spectroscopy (PALMS)
+and Laser Ablation of Aerosol Particles Time-of-Flight Mass Spectrometer (LAAP-TOF). They can deliver real-time data, but due to matrix effects during the ionization process, generating quantitative mass
+concentration data is difficult (Hinz and Spengler, 2007). Most single particle mass spectrometers employ
+aerodynamic lenses that limit particle detection to a given aerodynamic size range, specific to each instrument. An additional detection limit is imposed by the need to trigger the desorption laser, which entails the detection of scattered light from a continuous wave laser source. This typically means that it is
+limited to particles of around 300 nm diameter or larger, although some instruments have been specifically tailored to the study of nanoparticles (Pennington and Johnston, 2012).
+Depending on the specific instrument used, it is normally possible to deliver elemental composition,
+some molecular information, and possibly mineral phase (Marsden et al., 2018). The abilities of the
+technique to detect and qualitatively identify dust and bio-particles and resolve mixing state makes
+it particularly useful for studying interactions between aerosol and mixed-phase clouds (Creamean
+et al., 2013). Numerical clustering algorithms are typically used to classify particles according to their
+mass spectra and generate time series of particle classes (Rebotier and Prather, 2007). Some instruments are also capable of sizing particles by either measuring the intensity of scattered light from
+the trigger laser or measuring the internal velocity to infer vacuum aerodynamic diameter (Salt
+et al., 1996). Due to complexities of the instrument and volume of data generated, this type of instrument is not well suited for long-term monitoring.
+Soft ionization inlets are a third class of aerosol mass spectrometer that deliver a wealth of (principally organic) data with a high (less than 1 hour) time resolution on the near-molecular level. The data
+can either be inspected for specific molecules or processed using a multivariate analysis such as factorization. Examples used with Chemical Ionization Mass Spectrometry (CIMS) include the semicontinuous Filter Inlet for Gases and Aerosols (FIGAERO-CIMS) (Lopez-Hilfiker et al., 2014) and
+Chemical Analysis of Aerosol Online (CHARON) (Eichler et al., 2015). The Extractive Electrospray
+Ionization (EESI-TOF) is another example of an online soft source (Lopez-Hilfiker et al., 2019).
+9.1.4 Measuring new particle formation
+New particle formation is an important phenomenon to characterize and understand in the Earth system
+(Chapter 5) and techniques have been developed to study this specifically. Measurement of new particle formation presents major challenges owing to the small size of the initial clusters and the rapidly
+growing particles.
+New particle formation events cause large numbers of particles to be evident in CPC
+(Section 9.1.3.3) and mobility particle size spectrometer (Section 9.1.3.4) data. However, these must
+be unambiguously differentiated from other sources of ultrafine particles such as from combustion.
+When observed using a mobility particle size spectrometer, new particle formation events often manifest as a mode of small particles of a size starting at (as a minimum) the 50% detection efficiency
+diameter of the CPC used, which increases in mobility diameter over time, often to several tens of nanometers. This pseudo-linear growth within a moving air mass (Chapter 5) shows as a curve when plotted
+on a logarithmic diameter axis (Fig. 9.3), giving rise to the term “banana plots.” Protocols exist for their",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,391,"Chapter 9 Measurements of ambient aerosol properties
+Typical new particle formation and growth event, as measured with a variety of specialized instruments in a boreal
+forest environment.
+Reprinted by permission from Springer Nature: (Kulmala et al., 2012).
+interpretation in terms of particle formation and growth rates (Kerminen et al., 2018; Kulmala
+The initial clusters formed by nucleation are challenging to study due to their small size (around
+1 nm diameter) but they can be detected using the CPC principle if the initial growth uses a different
+working fluid such as diethylene glycol (Kangasluoma and Attoui, 2019; Vanhanen et al., 2011). A
+device such as a Particle Size Magnifier (PSM) can grow nanometer-size particles to around 90 nm
+for subsequent detection by a CPC. Mobility particle size spectrometers such as the Neutral cluster
+and Air Ion Spectrometer (NAIS) and Symmetric Inclined Grid Mobility Analyzer (SIGMA) use a similar principle to the DMA, separating charged particles by their electrical mobility, and Faraday cup
+aerosol electrometers to detect small clusters (Manninen et al., 2016; Tammet, 2011). It is also possible
+to study the composition of homogeneously nucleating particles using a time-of-flight mass spectrometer equipped with an atmospheric pressure interface (APi-TOF), either studying charged clusters directly or after the chemical ionization of neutral clusters or gases (CI-APi-TOF) ( Jokinen et al., 2012;
+Junninen et al., 2010). These have offered new insights into the nucleation process on a molecular level",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,392,"9.1 Measurement principles and instruments
+9.1.5 Measuring aerosol particle optical properties
+Particle optical properties are important for radiative transfer and also to assist in the inversion of remote
+sensing data (Chapters 10 and 12) (Bohren and Huffman, 1998). The key in situ parameters are normally
+expressed as Beer-Lambert coefficients (β) for a given wavelength, conventionally using units of Mm1
+(inverse megameter) and are integrated through an atmospheric column to derive aerosol optical depth.
+Secondary properties such as single scattering albedo (SSA) can be calculated from these and other parameters such as the per-particle cross sections and mass specific coefficients can be calculated when
+combined with other data. Measurements at multiple wavelengths can be used to define the Ångstr€om
+exponent and the approximate size of particles (Chapter 11). The measurements are normally with reference to filtered air, not a vacuum, so are strictly the particulate contribution to the optical properties, not
+that of the overall aerosol, which should include the optical properties of the gases in the air.
+The particle extinction coefficient (βext) can be determined directly using a high-finesse optical
+cavity and measuring the ring-down time (the decay time of intensity) associated with a modulated
+monochromatic light source (Langridge et al., 2011). This can also be manifested as a measured phase
+shift on a square wave light source as used by the Aerodyne CAPS (Massoli et al., 2010). Depending on
+the specific instrument, precisions of around 1 Mm1 on per-second data are possible and the accuracy
+is generally taken to be very high, providing particles are consistently transmitted into the cavity.
+The particle scattering coefficient (βsca) can be measured using an integrating nephelometer,
+where particles are illuminated in a void and the scattered light over a defined solid angle is measured
+(Heintzenberg et al., 2006). The total scattered light can be measured using an integrating sphere, as
+used on the Aerodyne CAPS. Alternatively, scattering as a function of angle can be measured by using
+multiple detectors as with the (now obsolete) TSI model 3563, or by sequentially illuminating different
+areas of the void using a shutter, as with the Ecotech Aurora series. These are used to derive asymmetry
+parameters used to model radiative transfer and remote sensing inversions (Andrews et al., 2006). A
+fundamental limitation of this technique is that a detector cannot measure any scattering close to the
+angle of incidence due to interference from the light source, which for particles much larger than the
+wavelength, can be substantial. This is known as truncation and means that, in order to deliver an estimate of the true βsca, a correction must be performed based on a model of scattering, using data from a
+collocated size distribution measurement or the wavelength and angle dependence of the signal.
+The particle absorption coefficient (βabs) can be measured as the difference between βext and βsca,
+but it is often desirable to be measured directly. This can be based on the attenuation through a filter as
+described in Section 9.1.3.3, but quantitatively relating this to the true βabs is difficult owing to the
+many complications associated with immobilizing the particles on a filter and transmitting light
+through a filter medium (Bond et al., 1999; M€uller et al., 2011). However, while not the most accurate,
+this technique is often desirable for monitoring due to its low cost and maintenance. The absorption
+coefficient of particles can be measured in their aerosol form using photoacoustic spectrometry, where
+an acoustic cavity and illuminated by a light source modulated at its resonant frequency and the
+absorbed light energy (converted to heat) is detected as sound (Arnott et al., 2003; Lack et al.,
+2012). Commercial versions of this include the DMT PAX, which also includes an inbuilt
+nephelometer. A related technique is photothermal interferometry, where the absorbed light energy
+is measured as changes to the surrounding air’s refractive index (Sedlacek and Lee, 2007). These techniques are capable of delivering data on a time resolution of seconds, however the measurement",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,393,"Chapter 9 Measurements of ambient aerosol properties
+precision of βabs is generally quite low (around 1–10 Mm1), so atmospheric data must normally be
+averaged to minutes or even hours, depending on the concentration.
+9.1.6 Measuring water interactions
+How particles interact with water vapor is crucial to understanding their effects on climate. Uptake of
+water by particles increases their size, thereby affecting their optical properties (and thus radiative effects) and their ability to form cloud particles. Measurements of the particle–water interactions described below can be related to chemical composition using complex fundamental models or
+simplified parameterizations such as κ-K€
+ohler, depending on the application (Chapter 5).
+The hygroscopic growth factor (the amount by which particles geometrically grow between two
+defined relative humidities) can be measured using a hygroscopicity tandem differential mobility analyzer (HTDMA). Particles are selected by a DMA (Section 9.1.3.4) according to size at a low humidity
+(typically RH <30%), conditioned to a higher humidity (typically 90%), sized by a second DMA before being counted by a CPC (Duplissy et al., 2009). By scanning both DMAs over the course of around
+an hour, the ""growth factor"" or g(RH) can be calculated as the ratio of mobility diameters. The precision
+of the reported g(RH) values is around 0.1 (Cubison et al., 2005). Some instruments are also capable of
+scanning the RH of the second DMA, allowing the g(RH) to be calculated as a function of RH, which is
+known as a humidogram, although this typically takes several hours to generate.
+The effect of humidity on the optical properties, known as f(RH), can be determined by parallel
+optical measurements at a dry humidity and at a higher humidity, e.g., with cavity ringdown or nephelometers (Langridge et al., 2011; Quinn et al., 2005). It is not possible to use photoacoustic or photothermal measurements of βabs in this manner due to artifacts caused by the water’s latent heat of vaporization.
+While the f(RH) of absorption can be calculated from f(RH) measurements of extinction and scattering,
+this can be inaccurate because of scattering biases associated with truncation (Section 9.1.5).
+Cloud condensation nuclei (CCN) concentrations can be measured using CCN counters (CCNC,
+or sometimes simply CCN) by subjecting particles to a given supersaturation and detecting activated
+particles using an optical particle counter (Roberts and Nenes, 2005). Supersaturated conditions are
+created by heating a wetted surface in either a parallel plate or cylindrical configuration and exploiting
+the fact that water vapor diffuses faster than heat in air, creating a supersaturated vapor front. This can
+deliver the number concentration of potential CCN at a given supersaturation (from around 0.07% upwards, selected by controlling the temperatures). When operated downstream of a scanning DMA
+(Section 9.1.3.4), size-resolved CCN number concentrations can be obtained, which in turn can be converted to the critical diameter for a given supersaturation or critical supersaturation for a given diameter
+(Paramonov et al., 2015; Whitehead et al., 2014)—Chapter 12. Ice-nucleating particles (INP) can also
+be detected using a similar principle (DeMott et al., 2017), although this is technically more challenging. INP can also be measured offline, by chilling particles immobilized on an impaction surface and
+observing ice phenomena (see Chapter 15).
+9.2 Conducting ambient measurements
+In addition to the measurement technology itself, consideration must also be paid to the way in which
+the measurements are conducted, some of which will be informed by the science needs as much as the
+measurement itself. Instruments must be calibrated and operated according to the manufacturer’s",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,394,"9.2 Conducting ambient measurements
+specification and ideally benchmarked against equivalents (Wiedensohler et al., 2018). This section
+summarizes the practical implications but for the in-depth theory, the reader is directed to Kulkarni
+et al. (2011), Hinds (1999) and Vincent (2007). The reader is also directed to the formal Global Atmospheric Watch (GAW) specification for aerosol measurement (WMO, 2016).
+As almost all aerosol measurements entail introducing the sample into an instrument or sample medium, they must utilize some means of transferring the air to the instrument, particularly if the instrument is located some distance away from the sampling point (e.g., at the bottom of a sampling tower).
+For the purposes of this discussion, the sampling point refers to the location where the air is draw in, the
+inlet a device that facilitates the air sampling, and the line refers to the intervening tubing between the
+inlet and the instrument.
+9.2.1 Sampling points and inlets
+When making ground-based measurements (Section 9.2.3) for climate-motivated studies, the sampling
+point is typically located at a height of around 5–30 m to avoid any influences of the immediate vicinity
+and provide a clear fetch in all directions, so is usually located on a building roof, or on a mast or tower
+(Fig. 9.4). Note that sampling points for air quality monitoring tend to be lower to better represent human exposure. Sampling equipment that has no line (e.g., certain models of high-volume sampler) are
+often located on elevated platforms or roofs, or generally away from buildings, trees or other obstructions and sources.
+Example of a mobile laboratory deployment designed for aerosol sampling. Image courtesy of Keith Bower,
+University of Manchester.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,395,"Chapter 9 Measurements of ambient aerosol properties
+The function of an inlet is to ensure that particles of a defined size range are transmitted to an instrument or sampler. A common example in air quality science is the PM2.5 metric, which is designed to
+represent the mass concentration of particulate matter that can penetrate to the alveolar region of the
+lungs. This is performed by using a certified impactor or cyclone that removes larger particles, with the
+cut point (defined as where particles are transmitted at 50% efficiency) at da ¼ 2.5 μm (Noble et al.,
+2001). However, inlets such as PM10 are still used even when not explicitly required (e.g., when making
+particle number size distribution measurements) to prevent the sampling of larger particles, which may
+clog the instruments or otherwise perturb the measurement. If a size-selective cyclone or impactor is
+not used, an inlet should still be shielded from rain and a mesh screen is often used to prevent insect
+There are also special inlets designed to measure the particles that are left behind when cloud droplets are dried out (the residuals), for example counterflow virtual impactors (CVI) (Shingler et al.,
+2012). These direct air flow at an inlet that is being supplied with particle-free air from the side such
+that the air is stagnant at the tip. Cloud particles, because of their inertia, will pass through the stagnant
+zone and dry out. The residuals can then be analyzed as normal aerosol particles.
+9.2.2 Sampling lines and losses
+Aerosol particles in a line are subject to undesirable loss mechanisms, namely electrostatic, diffusion,
+impaction, and gravitational settling. The effect of the losses can be determined empirically by comparing the particle number size distribution measurements with and without the line, or through modeling. While well-established models exist for most of the processes (e.g., von der Weiden et al., 2009),
+electrostatic precipitation, thermophoresis (particle migration due to temperature gradients) and flow
+splits are hard to predict, so empirical calibration is also desirable (e.g., Birmili et al., 2007). An example of a comparison of modeled and measured line transmission curves is shown in Fig. 9.5.
+Comparison of measured and modeled aerosol particle transmission as a function of size for a 300 m inlet line
+designed for a tall tower set-up.
+From Birmili et al. (2007) with permission.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,396,"9.2 Conducting ambient measurements
+Diffusion losses from Brownian diffusion toward the walls affects smaller particles the most (in
+particular particles smaller than approximately 100 nm in mobility diameter). The loss is mitigated
+by making lines shorter or increasing the flow rates. While increasing the bore of the line reduces
+the surface-to-volume ratio, it also increases residence time for a given flow rate, so the effects cancel
+out. However, wider lines do permit higher flow rates without a high pressure drop or inducing turbulence (see below). For measurements of nucleation in particular, lines are kept as short as possible. A
+common configuration to help mitigate this is to have a large flow from the inlet through a wide-bore
+tube, then to subsample the centerline of this flow (where losses are lower) before distributing air to the
+instruments. Diffusion losses are enhanced by turbulence, so when smaller particles are of interest,
+lines are generally operated with a laminar flow. This means operating at a low Reynolds number (less
+than 2000) and keeping the inner surfaces of the line as smooth as possible, as even transient turbulence
+can mix the aerosol and bring more particles into proximity of the inner surfaces. Diffusion is also
+enhanced by thermophoresis, so unnecessary heating of the lines should be avoided. This also prevents
+the loss of semivolatile components such as ammonium nitrate and certain organic components.
+There are applications where a turbulent flow is preferred, as this can improve the transmission of
+larger particles (Andrews et al., 2019). A plug flow profile is also desirable when making very fast
+response measurements (e.g., eddy covariance), as this will reduce dispersion during the line transit
+(Nemitz et al., 2008). In these situations, losses of smaller particles must be carefully characterized
+and corrections applied as appropriate.
+Electrostatic losses affect smaller particles more, but are hard to predict. These losses are normally
+eliminated by ensuring inlets and lines are made of a grounded, conductive substance, usually stainless
+steel. While copper is sometimes preferred as it is more ductile, it will corrode during prolonged use
+(particularly at coastal sites), so is not suitable for permanent installations. In some installations, a
+large-bore nonconductive polymer line is used for the major flow, but the centerline is subsampled
+using a conductive material, as with diffusion loss minimization (Andrews et al., 2019). Conductive
+flexible polymers, in particular carbon impregnated silicone, are also frequently used for lines and intermediate connections because of their convenience and versatility, but these may be undesirable for
+some applications as they are known to emit volatile organic compounds that may perturb the measurement (Asbach et al., 2016; Timko et al., 2009).
+Impaction losses mainly affect larger particles (over approximately 500 nm in aerodynamic diameter) and are caused by particles with high inertia leaving the gas streamlines as they change direction.
+This can cause them to strike the internal surfaces, or leave the centerline of a laminar flow prior to a
+subsample. These losses are mitigated by limiting the number of bends and splits in the line and where
+bends are unavoidable, increasing the radius of curvature or reducing the flow velocity.
+Gravitational settling occurs through heavier particles falling out of the air flow and again affects
+larger particles. This is mitigated by increasing the flow rate, or having the line as an uninterrupted
+vertical pipe.
+The relative humidity of the air in the instrument can have a large effect on measured quantities
+such as diameter. Some instruments (in particular those reporting size or total mass) are run at a low
+humidity (typically RH <40%) to prevent hygroscopic growth, so the line air is often dried prior to
+sampling (Gómez-Moreno et al., 2015; Tuch et al., 2009; Wiedensohler et al., 2012). Although it
+may be desirable to size particles at ambient RH, active control of instrument RH is technically challenging and very high humidities can cause instruments to malfunction. It is therefore more common to
+measure particles “dry” and refer to dedicated humidified instruments (Section 9.1.6) to predict their",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,398,"9.2 Conducting ambient measurements
+flight direction
+air outlet
+air sampler and
+carbon monoxid inlet
+aerosol and ozone inlet
+The CARIBIC aircraft inlet system, incorporating sampling lines for aerosol and ozone inside a diffuser, as used for
+measurement aboard commercial aircraft.
+Reproduced from Hermann et al. (2001) with permission. # 2001 American Meteorological Society.
+Inlets present a particular issue for aircraft measurements. Small instruments can be mounted in
+outboard pods (e.g., under the wings), but most will have to be inside the fuselage. This means that
+lines must protrude out of the aircraft, with the inlet located at or as near the front as possible to minimize perturbations. The inlet itself must also be able to slow down the air (relative to the aircraft) while
+not incurring significant losses. Solutions vary according to airframe, but a common method is to use a
+diffuser cone (Fig. 9.6), which should ideally sample the air isokinetically and isoaxially, then subsequently expand it to slow it down (Hegg et al., 2005; Hermann et al., 2001). While these inlets generally
+perform well for particles smaller than around 500 nm, they may concentrate particles of larger aerodynamic diameters (Huebert et al., 2004). The act of slowing will also increase the pressure, thus increasing the temperature and reducing the humidity (ram heating). Another issue is that at high
+velocity, larger particles (in particular ones made of ice) striking the solid inlet may shatter and/or chip
+off material from the inlet itself, which would lead to erroneous data (Murphy et al., 2004). For these
+reasons, aircraft inlets must be very carefully characterized in a variety of conditions appropriate to the
+application.
+Unmanned aerial vehicles (UAVs) and airships are also used for aerosol in situ measurements.
+Airships are highly desirable because of their low speed (Rosati et al., 2016), although some air speed
+must be maintained to prevent interference from any sources on the airship. Helicopters can deploy
+instruments on a suspended package (D€
+using et al., 2018). Advances in miniaturization have allowed",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,399,"Chapter 9 Measurements of ambient aerosol properties
+UAVs to be equipped with aerosol instruments (Bates et al., 2013), although space, weight, and power
+requirements mean that the quality and range of data produced are inferior to what larger aircraft are
+capable of. Smaller instruments have also been attached to tethered balloons (Renard et al., 2018), and
+low-cost sensors can now be used on disposable balloon- or drop-sondes (Smith et al., 2019).
+9.3 Data from in situ measurements
+Data must be processed, quality assured, archived, and made available. In the case of long-term measurements, defined processes are normally in place for this, but “intensive” measurements are often
+done in a more ad-hoc manner. However, it is increasingly a condition of receiving public funding
+for research that data are made available that adhere to the Findable, Accessible, Interoperable and
+Reusable (FAIR) principles (Wilkinson et al., 2016).
+9.3.1 Processing, file formats, and metadata
+All in situ data must undergo a certain level of processing before usable data products can be submitted
+to a database. This can include the removal of invalid data (due to technical failure, calibrations, and
+maintenance), inversion of raw data (including corrections where necessary), and application of calibrations. The data should then go through a process of quality assurance, which can entail the application of statistical tests, comparison against external data sources, and manual inspection of the
+ambient and diagnostic data to ensure, as far as possible, that the data are valid. Suspected “bad” data
+(e.g., below detection limit) are normally “flagged” as such rather than removed, unless there is clear
+evidence it is erroneous (e.g., equipment failure). Quality assured data are then assigned a unique identifier with version number so that if it is subsequently modified, there will not be conflicting versions of
+the data in existence.
+Data product levels are often assigned to indicate the amount of data processing that has occurred.
+For instance, level 1 data may refer to the instrument’s native time base and units (Section 9.1.1),
+whereas level 2 may have it mapped onto a prescribed grid and with specified units (e.g., standard volumetric concentrations; STP). Some databases may also permit the sharing of level 0 or provisional
+data, which is the preliminary data (often produced automatically) that has not undergone full quality
+assurance. The exact protocol and the quality assurance process will be specific to the instrument and
+database in question and can originate from the instrument manufacturer, the data provider and/or the
+database managers; however this information should be stored alongside the dataset or referred to in a
+publicly accessible document.
+File formats vary enormously, but there are some standards. Files are typically shared in simple
+ASCII formats such as comma-separated variable (CSV) and NASA Ames files, which are more easily
+handled by different systems and analysis tools. While easy to work with in small numbers, these file
+formats quickly become cumbersome when large numbers of files are produced by different organizations with different conventions and is very inefficient for large amounts of data. The latest hierarchical data format (HDF5) provides an open specification and set of tools for storing and transferring
+large (primarily scientific) datasets. Its data structure allows for multiple, nested, and optionally multidimensional variables or different types within a file. Specific variables, and chunks of variables, can
+be accessed directly allowing extremely quick reading of subsets of data.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,401,"Chapter 9 Measurements of ambient aerosol properties
+9.3.2.1 GAW World Data Centre for Aerosols
+The World Meteorological Office (WMO) Global Atmosphere Watch (GAW) programme was set up
+to monitor and distribute data pertaining to long-term changes to the atmosphere and wider Earth system (WMO, 2014), which includes an aerosol component. GAW consists of a network of global sites
+from which data are contributed voluntarily according to agreed specifications and protocols. The sites
+are generally in remote locations, to best characterize the background atmosphere in a given geographical location. The aerosol database is hosted by the Norwegian Institute for Air Research (NILU) EBAS
+facility at  and  which also contains links to associated
+documentation and reports.
+9.3.2.2 NOAA ESRL Federated Aerosol Network
+The US National Oceanic and Atmospheric Administration (NOAA) has a monitoring programme as
+part of its Earth Systems Research Laboratory (ESRL) Global Monitoring Division. This consists of
+sites within the USA but also has facilitated the harmonized setting up and collection of climaterelevant aerosol data in partner countries as part of the wider Federated Aerosol Network (Andrews
+et al., 2019). The methodologies and protocols are aligned and contribute to GAW (see above) and
+data available also available on EBAS. In addition, the data for the NOAA-owned sites is also hosted
+at 
+The US Environmental Protection Agency established the Interagency Monitoring of Protected Visual
+Environments (IMPROVE) network in 1985 to monitor haze and visibility within the national parks.
+This included measurements of aerosol composition (see  and
+ with a large expansion in data collection around 2000 with
+this and the associated Chemical Speciation Network (CSN) (Solomon et al., 2014). IMPROVE is
+one of the longest-running networks and, because the sites are located in rural environments and feature
+optical property and composition data, the data are generally more relevant to climate studies than data
+from urban air quality monitoring sites. Data can again be obtained at EBAS.
+The Co-operative Programme for Monitoring and Evaluation of the Long-range Transmission of Air
+Pollutants in Europe (EMEP) was formed in response to the Convention on Long-range Transboundary
+Air Pollution (LRTAP), signed in 1979. While the initial focus was on acid deposition and eutrophication within Europe, it was extended to other long-range pollutants, including aerosol. As with IMPROVE, the monitoring sites are generally rural and remote sites. The data are archived at EBAS.
+Aerosol, Clouds, and Trace Gases Research Infrastructure (ACTRIS) is a European Union initiative
+that built on previous activities such as European Integrated Project on Aerosol Cloud Climate and
+Air Quality Interactions (EUCAARI) and European Supersites for Atmospheric Aerosol Research
+(EUSAAR). This comprises not only a network of surface monitoring sites, standardization protocols
+and an integrated database, but also calibration facilities ( The data is archived
+by EBAS (",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,402,"9.4 Modeling
+In-service Aircraft for a Global Observing System (IAGOS) is a European Research Infrastructure for
+global observations of atmospheric composition, which involves instrumenting commercial long-haul
+aircraft for the purposes of collecting an extensive and long-term dataset, building on the previous
+MOZAIC and CARIBIC projects (Petzold et al., 2015). There are two components: IAGOS-CORE,
+where a relatively small package is permanently installed on a number of aircraft, and
+IAGOS-CARIBIC, where a larger payload inside a cargo container is used periodically by a specific
+aircraft. The dataset is far more extensive than those collected by campaigns on dedicated scientific
+aircraft, albeit limited to the flight routes of the fleet. The data are of particular use in studies of
+the upper troposphere/lower stratosphere and it also generates deep profiles during ascent and descent
+phases (e.g., Martinsson et al., 2019). Data are available at 
+The Global Aerosol Synthesis and Science Project (GASSP) was a UK-based project designed to utilize
+intensive aerosol properties for the purpose of constraining climate models (Reddington et al., 2017).
+Particular attention was paid to assembling surface and airborne data from various discrete measurement campaigns around the world that while potentially available on individual databases or through
+direct communication with the investigators, were not subject to the same level of standardization as
+the long-term datasets. This involved collecting the data and assigning a unified metadata scheme such
+that the data could be queried in a consistent manner. This includes the time-dependent location data for
+the aircraft and ship observations.
+9.4 Modeling
+The measurements described here are highly valuable for evaluating and improving the representation
+of aerosol in models (Chapter 6). These in situ measurements provide directly comparable quantities
+that do not rely on the assumptions required when using remotely sensing observations. In contrast to
+satellite-based remote sensing observations however, in situ observations are necessarily very sparse in
+space and time, which complicates model-observations comparisons.
+9.4.1 Sources of error when comparing models and measurements
+Data sparsity stems from both the extremely small (1 m) scale of the measurements which are many
+orders of magnitude smaller than climate-scale processes, and the scarcity of the measurements themselves, which often require dedicated field campaigns. In this section we will discuss the effect of each
+of these on model comparisons, which can lead to errors as large as 100% which easily swamp observational uncertainties, before addressing the practical steps which can be taken to best mitigate them.
+9.4.1.1 Sub-grid-scale variability
+There is a fundamental mismatch in the spatial scales at which the measurements described in this section are made (1 m) and the scales that aerosol models attempt to represent (1–100 km). Further,
+while many aerosol models are run with a short time-step (minutes) the relevant fields are usually
+only output averaged over days or even weeks, while measurements are often made much more",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,403,"Chapter 9 Measurements of ambient aerosol properties
+Autocorrelation (r) of 499 nm aerosol optical depth (solid curves) and Ångstr€om exponent (Å, dashed) in the
+Alaska (blue) and Canada (red) phases. Data points at 0.44 km are for the consecutive pairs. Other data points
+are for data pairs each of which has a gap of the stated distance 0.2 km. Vertical bars indicate a measure of
+sampling error. Some of them are too short to be discernible. The bars for Angstrom exponent are intentionally
+shifted to the right for clarity.
+Reproduced from Shinozuka and Redemann (2011).
+frequently (seconds to minutes). Airborne observations made during the Arctic Research of the Composition of the Troposphere from Aircraft and Satellites (ARCTAS) experiment sampled both highly
+heterogeneous aerosol conditions heavily influenced by local fire emissions and homogenous air
+masses reflecting the large-scale background, allowing estimates of the spatial length-scales of aerosol
+variability under different conditions (Shinozuka and Redemann, 2011). They found that under the influence of local emission sources the aerosol optical depth can vary significantly over scales of more
+than 1 km, and away from such sources it varies significantly over scales larger than around 30 km
+(Fig. 9.8). This is much larger than the scales of observations and much smaller than typically used
+in GCMs, leading to potential biases when comparing with in situ observations that can remain even
+after averaging. The assumptions used in many GCMs about the smoothness of the underlying fields at
+grid-box scales can also lead to large biases in the model average (Weigum et al., 2016), but these are
+distinct from the biases discussed here.
+To quantitatively estimate these biases a “perfect” model experiment can be designed whereby a
+high-resolution model is coarse-grained (spatially degraded) in order to estimate the effect of spatial
+averaging. Recent work using a 10 km horizontal resolution model and comparing with 200 km spatial averages of the same underlying data has shown biases of 30%–160% in aerosol optical depth and
+particle concentrations (Schutgens et al., 2016a). Given the relatively coarse 10 km model resolution
+used, this is likely to be a low estimate of the bias, particularly near sources. They show that long-term
+temporal averaging can reduce these biases to some extent but not alleviate them entirely.
+As part of their evaluation of the representation of particle size distributions in a GCM using aircraft
+observations, Watson-Parris et al. (2019) performed a perfect model experiment to investigate the effect of using different model temporal resolutions (Fig. 9.9). By comparing the model output interpolated to the flight locations in space and time from the shortest timescales resolved by the model
+(7.5 min timestep) to 3-hourly, daily, and monthly averaged output they found that comparing observations of CCN (at 1% supersaturation) with monthly averages can reduce the correlation to <0.7 and
+introduce biases of 15% or more. Moreover, this bias can be of different signs in different regions.
+Schutgens et al. (2016b) have shown similarly large biases in comparing with monthly averaged fields.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,404,"9.4 Modeling
+North America at 1 % SS
+SE Pacific at 1 % SS
+Taylor diagram showing the root mean square (rms) error and reduction in correlation and variability introduced
+by comparing instantaneous ECHAM-HAM model output (using a flight track simulator) with interpolations from
+different temporal aggregations of the same model data. All datasets are linearly interpolated from the same
+underlying 4-D model field (CCN at 1% supersaturation) and compared with an online interpolation. (a) Data over
+North America. (b) Data over the south-east Pacific.
+From Watson-Parris et al. (2019).
+Different aerosol particle properties have different temporal auto-correlation lengths and so will
+produce difference biases at a given model resolution. These biases are also heterogeneous and depend
+strongly on the proximity of local sources and sinks.
+9.4.1.2 Measurement data sparsity in space and time
+Given the sparsity of in situ aerosol measurements, an important question is how representative they are
+of the wider atmosphere and hence over what scales can they be usefully averaged and compared with
+their modeled counterparts. The degree of representativity of an aerosol measurement depends on the
+strength of local sources and sinks, the meteorology, and topology. Another perfect model experiment
+(Schutgens et al., 2017) estimated the representativity of black carbon surface concentration measurements over Europe (Fig. 9.10). The representation errors were found to be as large as 50%, much
+larger than the measurement uncertainty. As above, local emissions and topography were large contributors to this source of error, and are very hard to correct for.
+Other biases can occur due to specific sampling requirements of the instrument. For example, aerosol optical depth measured using sun photometers as used in the AERONET network require daylight
+and clear skies. Due to covariation between clouds and aerosol, this sampling requirement can lead to a",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,405,"Chapter 9 Measurements of ambient aerosol properties
+Representativity of aerosol optical depth and black carbon surface concentration. The locations of ACTRIS
+measurement sites are marked.
+From Schutgens et al. (2017).
+biased estimate of the average aerosol optical depth at a site when compared to a model which is able to
+average over all conditions.
+By carefully choosing the locations of the measurement sites and clearly documenting their characteristics, including any nearby sources, modelers can at least make an informed decision as to their
+utility for evaluation. Large observation networks (AERONET, ACTRIS) and databases (GASSP) help",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,407,"Chapter 9 Measurements of ambient aerosol properties
+Monthly ensembles for the years 2011–15 of the CCN number concentration for supersaturation 0.2% (CCN0.2).
+The CCN0.2 obtained from observational data is shown with symbols. The continuous bold blue and red lines
+show the monthly median and mean of all models, respectively. The shaded area shows 25% and 75%
+of the model results, while the green dashed lines show the minimum and maximum values of all models.
+From Fanourgakis et al. (2019).
+Interestingly, the models showed a lower variability in their representation of droplet number concentration, Nd, compared to CCN number concentration, which was attributed to the sublinear relationship between CCN and Nd and the negative correlations between the sensitivity of Nd to CCN and to
+updraft velocity. Although there was good agreement on the Nd between the models, there were larger
+disagreements in the sensitivities, with important consequences for ACI forcing estimates.
+9.4.2.2 Aerosol mass spectrometer constraint on the global secondary organic aerosol
+budget (Spracklen et al., 2011)
+The budget of Secondary Organic Aerosols (SOA) is still very uncertain, with a large range of estimates
+of global sources and a reliance on simplistic representations in many aerosol models. This study used a
+large collection of in situ AMS measurements (Section 9.1.3.5) to evaluate the GLOMAP global chemical transport model. The authors explored the various contributions to SOA from biogenic (monoterpenes and isoprene), anthropogenic, and biomass burning volatile organic compounds by altering their
+respective emissions in the model and looking for the best match with observations (Fig. 9.12). They",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,408,"9.4 Modeling
+Normalized mean error (NME, %) between SOA simulated by a linear version of the global model and oxidized
+organic aerosol observed by the AMS as a function of (a) and (c) biogenic (isoprene and monoterpene) and
+anthropogenically controlled SOA (biomass burning SOA fixed at 36 Tg year1 SOA); (b) and (d) biomass burning
+and anthropogenic controlled SOA (biogenic SOA fixed at 13 Tg year1 SOA). In panels (c) and (d) AMS
+observations have been weighted to remove bias in the observational dataset.
+From Spracklen et al. (2011).
+found that by including a large source of emissions matching anthropogenic sources gave the lowest
+normalized mean error, although they also showed these are unlikely to be due to fossil fuel sources.
+They propose a large additional anthropogenic source of SOA, with corresponding consequences for
+the aerosol radiative forcing.
+9.4.2.3 In situ constraints on the vertical distribution of global aerosol
+(Watson-Parris et al., 2019)
+This study evaluated the importance of different aerosol processes in controlling the vertical particle
+size distribution with careful sampling and a large collection of aircraft data from the GASSP database.
+(Fig. 9.13). It demonstrated that the global aerosol–climate model ECHAM-HAM underestimates
+accumulation-mode particles (and consequently the potential CCN number concentration) in the upper
+troposphere, especially in remote regions. The authors performed sensitivity experiments by scaling the",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,409,"Chapter 9 Measurements of ambient aerosol properties
+The vertical profile of fractional bias in aerosol number modeled by ECHAM-HAM at different size cut-offs for a
+selection of in situ measurements in the (a) northern extratropics; (b) the tropics; (c) the southern
+extra-tropics.
+From Watson-Parris et al. (2019).
+microphysical processes expected to control this bias and show that they are predominantly related to
+aerosol particle aging and removal rather than emissions. In particular, the wet removal was shown to
+be over-efficient in the model, particularly in the southern extra-tropics. A potential reason for this
+over-efficiency is the assumption that aerosol mixes instantaneously across a grid box (Gryspeerdt
+et al., 2014). This assumption is common to many GCMs and could have consequences for estimates
+of aerosol-cloud-precipitation sensitivities and feedbacks.
+9.4.2.4 The vertical profile of organic aerosol (Heald et al., 2011)
+This study evaluated the representation of organic aerosol in a widely used aerosol model but with a
+focus on the vertical distribution as measured by a large number of aircraft campaigns (Fig. 9.14). Similarly to Spracklen et al. (2011), they found that applying a large increase in anthropogenic SOA emissions was required in order to best match to observations near source. With the benefit of aircraft
+measurements, however, they also found that this increase leads to an overestimate aloft and in remote
+regions, suggesting either additional sinks of organic aerosol, or higher volatility at colder temperatures. They rule out wet removal biases in their model and instead decrease the enthalpy of vaporization
+to improve their match with observations.
+Each of these studies demonstrates the value of in situ observations for evaluating and improving
+the representation of aerosol and aerosol particle processes in models, but also the difficulty in attributing biases to one particular process. Ultimately these observations should be combined with remote
+sensing datasets for robust model evaluation.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,410,"Altitude [km]
+Altitude [km]
+DABEX/DODO
+Altitude [km]
+ARCTAS (summer)
+OA (µg/sm3)
+OA (µg/sm3)
+OA (µg/sm3)
+ARCTAS (spring)
+Altitude [km]
+Obs (Mean)
+Obs (Median)
+Obs (Mean, no BB)
+GEOS-Chem (POAo)
+GEOS-Chem (POAi)
+GEOS-Chem (SOA)
+OA (µg/sm3)
+Mean vertical profile of organic aerosol for 17 field campaigns (color, solid) with the mean GEOS-Chem simulation
+shown in gray. Model contributions from hydrophobic primary organic aerosol (POA, dark gray), hydrophilic POA
+(medium gray) and SOA (light gray) are shown. The model simulation here includes an additional source of
+anthropogenic SOA (ASOA) of 100 Tg year1 estimated by scaling simulated ASOA by a factor of 30. Median
+observed values at each altitude are shown as dotted lines. Mean observed values with biomass burning plumes
+removed (see text) are shown as thin colored lines. The standard deviation of the binned observations at each 0.5 km
+interval is also shown. The model simulation is sampled for the dates and locations of each aircraft campaign.
+From Heald et al., 2011.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,397,"Chapter 9 Measurements of ambient aerosol properties
+behavior in the ambient atmosphere. Drying also becomes a general necessity when running in environments where the cabin temperature is lower than the ambient dew point (e.g., tropical) and liquid
+water risks condensing in the line. Dry particle properties are also desirable for comparing with model
+data because these properties are directly simulated, and the humidity in the model may not be consistent with the humidity in the sampled environment, which would introduce an inconsistency in the
+comparison.
+Drying is sometimes achieved through heating the line, but this potentially creates losses through
+semivolatile evaporation and thermophoresis. A desiccant such as silica gel separated from the flow by
+a mesh screen can be used; however this enhances diffusion losses and the desiccant must be changed
+regularly. The generally preferred method used in monitoring is to flow the sample past a suitable
+water-permeable membrane with a dry counterflow or vacuum on the outer side.
+Flow splits and subsamples are sometimes necessary when distributing a sampled flow between
+multiple instruments. However, these may also introduce losses and biases, for example, if larger particles impact on a bend or one instrument preferentially draws air from the centerline, where diffusion
+losses are lower. Where necessary, these features should be properly designed and characterized.
+9.2.3 Measurement platforms
+Ground-based measurements mostly comprise automated measurement sites for air quality monitoring purposes and therefore principally in urban environments, although remote and rural sites are also
+established for air quality, chemical transport and climate monitoring. Ground sites are often the subject of intensive measurement periods, which, while only producing data on a short period of time,
+tends to be very detailed in scope, with a large number of complementary measurements (e.g.,
+Bohnenstengel et al., 2015).
+Marine measurements have been made extensively on research cruises (e.g., Baker et al., 2017;
+Bates et al., 2008). Additional consideration must be given to eliminate interference from the ship itself, through impaction of ambient particles with the ship’s superstructure or sources such as the engine
+and galley. It is generally desirable to place aerosol inlets as close to the bow as possible but to minimize line length, it may be necessary to house the instruments on or below the foredeck (e.g., inside
+shipping containers). Alternatively, inlets and instruments can be placed above the wheelhouse. Even
+with these precautions, it is usually desirable to filter the data for ship influences, for example, in a
+tailwind or when turning. In addition to ships, measurements can also be made on buoys (Norris
+Airborne measurements have been made extensively over many parts of the world as part of research campaigns as well as routinely on board a small number of commercial aircraft. The reader is
+directed to Wendisch and Brenguier (2013) for more detail. Worldwide, many tens of fixed-wing,
+piloted aircraft have been modified to carry aerosol and cloud instruments and make measurements
+from near the surface to the lower stratosphere. Because of the motion of the aircraft, fast, online measurements are the most desirable. The spatial resolution itself is limited by the speed of the aircraft, with
+slower speeds resulting in better resolution. However, the slower aircraft tend to have smaller payloads
+and are limited to lower altitudes. Aircraft measurements are usually performed during discrete campaigns (e.g., Fehsenfeld et al., 2006), although longer-term data can be obtained on in-service commercial aircraft (Section 9.3.2).",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,400,"9.3 Data from in situ measurements
+The network Common Data Form (NetCDF) file builds on this structure and imposes common
+structures and metadata conventions to allow easy portability and shareability. The NetCDF format
+is also self-describing, containing information about the data it contains—so-called metadata. This
+metadata also follows certain conventions so that the wide variety of open-source tools available to
+work with it can interpret, for example, certain values as representing missing, or fill, values.
+Climate and Forecast (CF) metadata provide a comprehensive set of metadata conventions specifically for climate- and weather-related phenomena. These specify specific coordinate names for common
+variables such as latitude and longitude and a protected “standard name” attribute to uniquely identify properties such as relative humidity. They also enforce strict rules about the inclusion and formatting of units for
+each variable. These conventions allow datasets to be widely shared and used without ambiguity.
+9.3.2 Aerosol databases
+Outside of routine monitoring, in situ measurements of aerosol are often performed on a campaignbasis
+and therefore produce a discrete dataset rather than one that is continuously added to. While these are
+often archived in general purpose databases, their nature means that assimilation for the purposes of a
+more general measurement-modeling comparing exercise can be challenging.
+A large number of systematic databases of in situ aerosol measurements exist, although most are
+designed around air quality measurements. Listed here are several climate-relevant aerosol databases
+providing rural and remote measurements. While this is not intended to be exhaustive, it does give some
+of the higher profile and comprehensive in situ aerosol databases. Trends in aerosol properties from
+some of these networks are described in Chapter 7. An example of the global distribution of data from
+one database is shown in Fig. 9.7.
+Global distribution of aerosol in situ measurements contained in the GASSP database as measured from
+(a) aircraft, (b) ground and (c) ship platforms. The CARIBIC campaign is shown in blue in (a) to highlight the large
+contribution to the spatial coverage, all other campaigns are shown in orange. See Reddington et al. (2017).",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
+Aerosols_and_Climate.pdf,406,"9.4 Modeling
+BOX 9.2 Practicalities of collocation and averaging
+As described in Section 9.4.1 large errors can occur when comparing large-scale models against in situ measurements. These
+broad classes of error can be minimized by following the same practice:
+(1) Average the observations to remove the small-scale variability which the model cannot represent. This depends on the
+spatial scale of the model being compared and the rate at which the measurements can sample that spatial scale. For
+aircraft observations where the platform is moving at 100 m s1 comparing with a 100 km global model grid box would
+suggest a roughly 2-min average. For a ground station longer averages might be appropriate.
+(2) Filter the observations for sampling biases due to, for example, plume chasing, near-by emissions sources, or other
+operational constraints.
+(3) Use a tool such as the Community Intercomparison Suite (CIS; Watson-Parris et al., 2016) to linearly interpolate high
+temporal resolution (daily or better) model output on to the locations of the observations.
+(4) Average the resulting colocated model and observational values for as long as possible over as large regions as are
+representative of the processes under investigation to remove as much remaining noise as possible.
+These steps lead to comparisons which, as closely as possible, represent true model-observation differences.
+alleviate this problem by providing more statistically robust sampling and consistent metadata information on the representativity of the measurements. A brief guide for how best to minimize these
+sources of error is provided in Box. 9.2.
+9.4.2 Case studies
+In order to demonstrate the value of in situ measurements in identifying and understanding aerosol model
+biases we briefly summarize four studies utilizing surface CCN number concentrations and composition
+measurements as well as airborne particle number size distribution and compositional data.
+9.4.2.1 Evaluation of global simulations of CCN and implications for cloud droplet
+formation (Fanourgakis et al. 2019)
+This comprehensive study of the particle size and sources of bias in surface CCN number concentration, and its effect on droplet number concentration (Nd) biases, used both a multimodel ensemble
+(MME) to investigate intermodel differences and a perturbed parameter ensemble (PPE) to investigate
+potential causes of bias in a single model (Fig. 9.11). The model diagnostics were designed to allow
+accurate comparison with a large network of ground station measurements, primarily the Aerosols,
+Clouds, and Trace gases Research InfraStructure (ACTRIS) network (Section 9.3.2), by outputting
+model values at each station location at high temporal resolution.
+As with many such evaluations they found a large spread in model estimates of CCN as compared to
+the observations and found that no single model performs better against all observations, but there was
+a consistent underestimation by the models. Detailed comparisons with the PPE were able to determine
+the major sources of uncertainty in the modeled CCN number concentration (in the HadGEM3-UKCA
+model at least) in the summer to be biogenic secondary organic aerosol formation and the hygroscopicity of the organic material, whereas dry deposition and cloud processing tend to dominate in
+the winter.",https://drive.google.com/link/to/Aerosols_and_Climate.pdf
