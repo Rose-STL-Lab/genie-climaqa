@@ -7,6 +7,7 @@
  
 <img src="./climagen/ui/public/framework.png" width="80%" alt="ClimaQA Image">
 <br/><br>
+
 </div>
 If you use this code, please consider citing our work. Copy the bibtex from the bottom of this Readme or cite as:
 
