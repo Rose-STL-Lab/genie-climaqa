@@ -101,7 +101,7 @@ cd evaluation
 pip install -r requirements.txt 
 ```
 
-Then, set the OPENAI_API_KEY and TOGETHER_API_KEY env variables in the `evaluation/.env` file accordingly
+Then, set the `OPENAI_API_KEY` and `TOGETHER_API_KEY` env variables in the `evaluation/.env` file accordingly
 
 The evaluation notebooks `mcq_evaluation.ipynb`, `freeform_evaluation.ipynb` and `cloze_evaluation.ipynb` contain code to download the *ClimaQA-Gold* dataset, visualize data samples and evaluation metrics. We have inclulded implementations of *default*, *few-shot* and *rag* settings. One can easily test any custom model by implementing a new CustomLLMAgent similar to the ones here.
 
