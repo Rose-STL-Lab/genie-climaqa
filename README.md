@@ -1,4 +1,18 @@
-# ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models (ICLR 2025)
+<div align="center">
+
+# ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models [ICLR 2025]
+
+
+<h3> ✨Official implementation of the <a href="https://arxiv.org/abs/2306.01984">ClimaQA</a> paper✨ </h3>
+ 
+![ClimaQA Image](climagen/ui/public/framework.png)
+
+</div>
+If you use this code, please consider citing our work. Copy the bibtex from the bottom of this Readme or cite as:
+
+> [ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models](https://arxiv.org/abs/2410.16701),\
+Veeramakali Vignesh Manivannan, Yasaman Jafari, Srikar Eranky, Spencer Ho, Rose Yu, Duncan Watson-Parris, Yian Ma, Leon Bergen, Taylor Berg-Kirkpatrick,\
+*The Thirteenth International Conference on Learning Representations*, 2025
 
 The code is organized into two independent sections:
 
@@ -90,3 +104,14 @@ pip install -r requirements.txt
 Then, set the OPENAI_API_KEY and TOGETHER_API_KEY env variables in the `evaluation/.env` file accordingly
 
 The evaluation notebooks `mcq_evaluation.ipynb`, `freeform_evaluation.ipynb` and `cloze_evaluation.ipynb` contain code to download the *ClimaQA-Gold* dataset, visualize data samples and evaluation metrics. We have inclulded implementations of *default*, *few-shot* and *rag* settings. One can easily test any custom model by implementing a new CustomLLMAgent similar to the ones here.
+
+## Citation
+
+    @inproceedings{
+    manivannan2025climaqa,
+    title={Clima{QA}: An Automated Evaluation Framework for Climate Question Answering Models},
+    author={Veeramakali Vignesh Manivannan and Yasaman Jafari and Srikar Eranky and Spencer Ho and Rose Yu and Duncan Watson-Parris and Yian Ma and Leon Bergen and Taylor Berg-Kirkpatrick},
+    booktitle={The Thirteenth International Conference on Learning Representations},
+    year={2025},
+    url={https://openreview.net/forum?id=goFpCuJalN}
+    }
