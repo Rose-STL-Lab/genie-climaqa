@@ -5,7 +5,7 @@
 
 <h3> ✨Official implementation of the <a href="https://arxiv.org/abs/2306.01984">ClimaQA</a> paper✨ </h3>
  
-![ClimaQA Image](climagen/ui/public/framework.png)
+![ClimaQA Image](./climagen/ui/public/framework.png)
 
 </div>
 If you use this code, please consider citing our work. Copy the bibtex from the bottom of this Readme or cite as:
