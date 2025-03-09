@@ -3,7 +3,7 @@
 # ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models [ICLR 2025]
 
 
-<h3> ✨Official implementation of the <a href="https://arxiv.org/abs/2306.01984">ClimaQA</a> paper✨ </h3>
+<h3> ✨Official implementation of the <a href="https://arxiv.org/abs/2410.16701">ClimaQA</a> paper✨ </h3>
  
 <img src="./climagen/ui/public/framework.png" width="80%" alt="ClimaQA Image">
 <br/><br>
