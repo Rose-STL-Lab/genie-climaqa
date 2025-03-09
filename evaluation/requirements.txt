@@ -1,0 +1,14 @@
+openai
+python-dotenv
+pandas
+datasets
+tabulate
+langchain==0.0.340
+langchain-core==0.1.23
+chromadb==0.4.18
+tiktoken==0.5.1
+bert-score
+nltk
+tensorflow
+tensorflow-hub
+scikit-learn
