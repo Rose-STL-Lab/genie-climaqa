@@ -95,6 +95,9 @@ npm start
 After logging in atleast once, choose an admin user and copy the respective *USER_UID* (can be found in the firebase authentication console) and paste it in `climagen/server/.env`. This user will have admin access and will be able to see questions vlaidated by all users.
 
 ## Evaluation
+
+The evaluation notebooks `mcq_evaluation.ipynb`, `freeform_evaluation.ipynb` and `cloze_evaluation.ipynb` contain code to download the *ClimaQA-Gold* dataset, visualize data samples and evaluation metrics. We have inclulded implementations of *default*, *few-shot* and *rag* settings. Alternatively, one can directly download the dataset from [HuggingFace](https://huggingface.co/datasets/UCSD-GENIE/ClimaQA) and use it as per their requirements.
+
 We provide code to evaluate OpenAI and open-source models using the [Together AI](https://www.together.ai/) API. The environment can be setup as follows:
 
 ```
@@ -104,7 +107,7 @@ pip install -r requirements.txt
 
 Then, set the `OPENAI_API_KEY` and `TOGETHER_API_KEY` env variables in the `evaluation/.env` file accordingly
 
-The evaluation notebooks `mcq_evaluation.ipynb`, `freeform_evaluation.ipynb` and `cloze_evaluation.ipynb` contain code to download the *ClimaQA-Gold* dataset, visualize data samples and evaluation metrics. We have inclulded implementations of *default*, *few-shot* and *rag* settings. One can easily test any custom model by implementing a new CustomLLMAgent similar to the ones here.
+One can easily test any custom model by implementing a new CustomLLMAgent similar to the ones here.
 
 ## Citation
 
